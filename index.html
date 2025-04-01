@@ -5,18 +5,23 @@
     <link rel="icon" type="image/png" href="/logoempresa.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Ejemplo de Index </title>
+    <link rel="stylesheet" href="indexstyle.css">
   </head>
   <body>
     <h1> Pagina Principal de Prueba </h1>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
     <form method="get" action="/cargar-cliente">
-        <label for="nombre">Nombre: </label>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+      <br><br>
 
-        <label for="apellido">Apellido: </label>
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required />
+      <br><br>
 
-
-
+      <button type="submit">Enviar</button>
     </form>
   </body>
 </html>
